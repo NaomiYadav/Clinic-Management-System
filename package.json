@@ -1,0 +1,52 @@
+{
+  "name": "clinic-management-system",
+  "version": "1.0.0",
+  "description": "A comprehensive web-based clinic management system built with HTML, CSS, JavaScript, and Firebase",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server -p 8080 -c-1",
+    "dev": "http-server -p 8080 -c-1 -o",
+    "build": "echo 'No build process needed for this static site'",
+    "test": "echo 'Tests will be implemented with Jest in future versions'",
+    "deploy": "firebase deploy",
+    "serve": "firebase serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NaomiYadav/Clinic-Management-System.git"
+  },
+  "keywords": [
+    "clinic",
+    "management",
+    "healthcare",
+    "patient",
+    "medical",
+    "hospital",
+    "appointment",
+    "prescription",
+    "billing",
+    "firebase",
+    "javascript",
+    "html",
+    "css"
+  ],
+  "author": "Naomi Yadav",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NaomiYadav/Clinic-Management-System/issues"
+  },
+  "homepage": "https://github.com/NaomiYadav/Clinic-Management-System#readme",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "firebase-tools": "^11.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
