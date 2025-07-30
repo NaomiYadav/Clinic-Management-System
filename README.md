@@ -207,7 +207,28 @@ Create test accounts:
 
 ## 🚀 Deployment
 
-### Firebase Hosting
+### Recommended: Vercel Deployment (Easiest)
+
+The fastest way to deploy your Clinic Management System:
+
+1. **Quick Deploy via Web Interface**
+   - Go to [vercel.com](https://vercel.com) and sign up
+   - Click "New Project" and import your GitHub repository
+   - Configure as static site (no build required)
+   - Deploy and get instant live URL
+
+2. **Using Vercel CLI**
+   ```bash
+   npm install -g vercel
+   vercel login
+   vercel --prod
+   ```
+
+📖 **Detailed Guide**: See `QUICK_DEPLOY_GUIDE.md` for step-by-step instructions
+
+### Alternative Deployment Options
+
+**Firebase Hosting**
 ```bash
 npm install -g firebase-tools
 firebase login
@@ -215,10 +236,17 @@ firebase init hosting
 firebase deploy
 ```
 
-### Other Hosting Platforms
-- Netlify: Drag and drop the project folder
-- Vercel: Connect GitHub repository
-- GitHub Pages: Enable in repository settings
+**Other Platforms**
+- **Netlify**: Drag and drop project folder
+- **GitHub Pages**: Enable in repository settings
+- **Surge.sh**: `npm install -g surge && surge`
+
+### Post-Deployment Setup
+1. Update Firebase authorized domains with your live URL
+2. Test all functionality on the live site
+3. Monitor for any issues
+
+🎉 **Live Demo**: Your deployed app will be available at `https://your-project.vercel.app`
 
 ## 🔒 Security Considerations
 

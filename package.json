@@ -8,8 +8,10 @@
     "dev": "http-server -p 8080 -c-1 -o",
     "build": "echo 'No build process needed for this static site'",
     "test": "echo 'Tests will be implemented with Jest in future versions'",
-    "deploy": "firebase deploy",
-    "serve": "firebase serve"
+    "deploy": "vercel --prod",
+    "deploy:preview": "vercel",
+    "firebase:deploy": "firebase deploy",
+    "firebase:serve": "firebase serve"
   },
   "repository": {
     "type": "git",
